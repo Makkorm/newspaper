@@ -1,5 +1,14 @@
 // variables
-$theme-color: #000;
+$theme-color: #333;
+$link-color: #990000;
+$white-color: #fff;
+$black-color: #000;
+$text-color: #444;
+$title-color: #333;
+$input-color: #1f1f1f;
+$input-border-color: #949494;
+$footer-text-color: #888;
+$footer-link-color: #fff;
 
 
 // display size
@@ -35,4 +44,115 @@ $phones: 480px;
   -o-border-radius:      $radius;
   -webkit-border-radius: $radius;
   border-radius:         $radius;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border-top: 3px solid $theme-color;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  input {
+    outline: none;
+  }
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+//header
+.main-header {
+  padding: 15px 0;
+}
+.logo {
+  float: left;
+  .logo-title {
+    margin: 0;
+    line-height: 50px;
+    a {
+      display: inline-block;
+      height: 50px;
+      color: $black-color;
+      padding: 0 0 0 70px;
+      background: url(../images/logo.png) left center no-repeat;
+    }
+  }
+}
+
+.header-menu {
+  float: right;
+}
+.menu {
+  li {
+    float: left;
+    margin-left: 15px;
+    a {
+      color: $black-color;
+      font-size: 18px;
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+}
+
+// nav
+.main-nav {
+  background: $black-color;
+  padding: 15px 0;
+  .menu {
+    float: left;
+    li {
+      float: left;
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+      a {
+        color: $white-color;
+        margin-right: 15px;
+        font-size: 20px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .search-box {
+    float: right;
+    position: relative;
+    .search {
+      background: $input-color;
+      border: 1px dashed $input-border-color;
+      padding: 5px 30px 8px 8px;
+      color: $white-color;
+      &:active {
+        outline: none;
+      }
+    }
+    .label-search {
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      width: 18px;
+      height: 18px;
+      background: url(../images/search.png) center no-repeat;
+      cursor: pointer;
+    }
+  }
 }
