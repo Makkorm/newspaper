@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  border-top: 3px solid #333; }
+  border-top: 3px solid #333;
+  background: #f6f6f5; }
   body ul {
     padding: 0;
     margin: 0;
@@ -81,5 +82,55 @@ body {
       height: 18px;
       background: url(../images/search.png) center no-repeat;
       cursor: pointer; }
+
+.content {
+  padding: 25px 0; }
+
+.left-side {
+  margin-right: 500px;
+  overflow: hidden; }
+  .left-side .main-article {
+    border-top: 2px solid #000;
+    padding-bottom: 50px; }
+    .left-side .main-article h2 {
+      text-transform: uppercase; }
+    .left-side .main-article .article-info {
+      border-top: 1px dashed #000;
+      border-bottom: 1px dashed #000;
+      padding: 8px 0; }
+      .left-side .main-article .article-info .user-name {
+        color: #000;
+        font-style: italic; }
+        .left-side .main-article .article-info .user-name:hover {
+          color: #333; }
+      .left-side .main-article .article-info .comments-count {
+        float: right; }
+  .left-side .article-box {
+    margin-top: 30px; }
+    .left-side .article-box .article-img {
+      width: 220px;
+      float: left; }
+      .left-side .article-box .article-img img {
+        padding: 2px;
+        border: 1px solid #333; }
+    .left-side .article-box .article-text {
+      margin-left: 250px;
+      overflow: hidden;
+      font-size: 18px; }
+      .left-side .article-box .article-text p {
+        margin: 0; }
+      .left-side .article-box .article-text .read-more {
+        margin-top: 40px; }
+        .left-side .article-box .article-text .read-more a {
+          color: #990000;
+          text-transform: uppercase; }
+          .left-side .article-box .article-text .read-more a:hover {
+            text-decoration: underline; }
+
+.right-side {
+  width: 450px;
+  float: right;
+  background: #949494;
+  border-top: 2px solid #000; }
 
 /*# sourceMappingURL=main.css.map */
