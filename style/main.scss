@@ -1,0 +1,38 @@
+// variables
+$theme-color: #000;
+
+
+// display size
+$wide-screens: 1200px;
+$desktops: 992px;
+$tablet: 768px;
+$phones: 480px;
+
+// media queries
+@mixin wide-screens {
+  @media (max-width: #{$wide-screens}) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media (max-width: #{$desktops}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+@mixin phones {
+  @media (max-width: #{$phones}) {
+    @content;
+  }
+}
+
+@mixin radius($radius...){
+  -moz-border-radius:    $radius;
+  -o-border-radius:      $radius;
+  -webkit-border-radius: $radius;
+  border-radius:         $radius;
+}
