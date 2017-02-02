@@ -67,11 +67,17 @@ body {
   .main-nav .search-box {
     float: right;
     position: relative; }
+    .main-nav .search-box span {
+      color: #fff;
+      font-style: italic;
+      font-size: 15px;
+      margin-right: 10px; }
     .main-nav .search-box .search {
       background: #1f1f1f;
       border: 1px dashed #949494;
       padding: 5px 30px 8px 8px;
-      color: #fff; }
+      color: #fff;
+      font-style: italic; }
       .main-nav .search-box .search:active {
         outline: none; }
     .main-nav .search-box .label-search {
@@ -129,8 +135,42 @@ body {
 
 .right-side {
   width: 450px;
-  float: right;
-  background: #949494;
-  border-top: 2px solid #000; }
+  float: right; }
+  .right-side section {
+    border-top: 2px solid #000;
+    margin-bottom: 30px; }
+    .right-side section h3 {
+      border-bottom: 1px solid #000;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      padding: 10px 0; }
+      .right-side section h3 a {
+        color: #000; }
+    .right-side section p {
+      font-style: italic;
+      font-size: 16px; }
+  .right-side .aside-article {
+    padding: 25px 0 0 0;
+    cursor: pointer; }
+    .right-side .aside-article:hover h4 {
+      text-decoration: underline; }
+    .right-side .aside-article:hover p {
+      text-decoration: underline; }
+    .right-side .aside-article a {
+      color: #000; }
+    .right-side .aside-article .article-img {
+      width: 84px;
+      float: left; }
+      .right-side .aside-article .article-img img {
+        padding: 2px;
+        border: 1px solid #333; }
+    .right-side .aside-article .article-text {
+      margin-left: 100px;
+      overflow: hidden; }
+    .right-side .aside-article h4 {
+      margin: 0; }
+    .right-side .aside-article p {
+      margin: 5px 0 0 0; }
 
 /*# sourceMappingURL=main.css.map */

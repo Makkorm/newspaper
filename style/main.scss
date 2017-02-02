@@ -138,11 +138,18 @@ body {
   .search-box {
     float: right;
     position: relative;
+    span {
+      color: $white-color;
+      font-style: italic;
+      font-size: 15px;
+      margin-right: 10px;
+    }
     .search {
       background: $input-color;
       border: 1px dashed $input-border-color;
       padding: 5px 30px 8px 8px;
       color: $white-color;
+      font-style: italic;
       &:active {
         outline: none;
       }
@@ -224,7 +231,57 @@ body {
 .right-side {
   width: 450px;
   float: right;
-  background: #949494;
-  border-top: 2px solid $black-color;
+  section {
+    border-top: 2px solid $black-color;
+    margin-bottom: 30px;
+    h3 {
+      border-bottom: 1px solid $black-color;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      a {
+        color: $black-color;
+      }
+    }
+    p {
+      font-style: italic;
+      font-size: 16px;
+    }
+  }
+  .aside-article {
+    padding: 25px 0 0 0;
+    cursor: pointer;
+    &:hover {
+      h4 {
+        text-decoration: underline;
+      }
+      p {
+        text-decoration: underline;
+      }
+    }
+    a {
+      color: $black-color;
+    }
+    .article-img {
+      width: 84px;
+      float: left;
+      img {
+        padding: 2px;
+        border: 1px solid $theme-color;
+      }
+    }
+    .article-text {
+      margin-left: 100px;
+      overflow: hidden;
+    }
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 5px 0 0 0;
+    }
+  }
 }
+
 
