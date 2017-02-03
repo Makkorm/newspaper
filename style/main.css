@@ -59,11 +59,11 @@ body {
       padding-bottom: 4px;
       border-bottom: 1px solid transparent; }
       .main-nav .menu li a {
-        color: #fff;
+        color: #dcdcdc;
         margin-right: 15px;
         font-size: 20px; }
         .main-nav .menu li a:hover {
-          text-decoration: underline; }
+          color: #fff; }
   .main-nav .search-box {
     float: right;
     position: relative; }
@@ -172,5 +172,62 @@ body {
       margin: 0; }
     .right-side .aside-article p {
       margin: 5px 0 0 0; }
+  .right-side .category-list li {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px dashed #333; }
+    .right-side .category-list li:hover a {
+      color: #333; }
+    .right-side .category-list li a {
+      color: #000; }
+
+.pager {
+  border-top: 2px solid #000;
+  padding-top: 30px; }
+  .pager ul li {
+    float: left;
+    height: 25px;
+    width: 25px;
+    background: #000;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid transparent; }
+    .pager ul li.active {
+      border: 1px solid #000;
+      background: #dcdcdc; }
+      .pager ul li.active a {
+        color: #000; }
+    .pager ul li:hover {
+      border: 1px solid #000;
+      background: #dcdcdc; }
+      .pager ul li:hover:hover a {
+        color: #000; }
+    .pager ul li a {
+      color: #fff;
+      line-height: 25px; }
+
+.footer {
+  padding: 50px 0;
+  background: #000; }
+
+.footer-block {
+  width: 30%;
+  float: left;
+  margin-right: 5%; }
+  .footer-block:last-child {
+    margin-right: 0; }
+  .footer-block h3 {
+    border-top: 2px solid #dcdcdc;
+    border-bottom: 2px solid #dcdcdc;
+    color: #dcdcdc;
+    padding: 8px 0;
+    text-align: center; }
+  .footer-block p {
+    color: #888;
+    text-align: center; }
+    .footer-block p a {
+      color: #fff; }
+      .footer-block p a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@ $main-bg: #f6f6f5;
 $link-color: #990000;
 $white-color: #fff;
 $black-color: #000;
+$light-color: #dcdcdc;
 $text-color: #444;
 $title-color: #333;
 $input-color: #1f1f1f;
@@ -126,11 +127,11 @@ body {
       padding-bottom: 4px;
       border-bottom: 1px solid transparent;
       a {
-        color: $white-color;
+        color: $light-color;
         margin-right: 15px;
         font-size: 20px;
         &:hover {
-          text-decoration: underline;
+          color: $white-color;
         }
       }
     }
@@ -282,6 +283,90 @@ body {
       margin: 5px 0 0 0;
     }
   }
+  .category-list {
+    li {
+      text-align: center;
+      padding: 5px 0;
+      border-bottom: 1px dashed $theme-color;
+      &:hover {
+        a {
+          color: $theme-color;
+        }
+      }
+      a {
+        color: $black-color;
+      }
+    }
+  }
 }
+
+
+// pager
+.pager {
+  border-top: 2px solid $black-color;
+  padding-top: 30px;
+  ul {
+    li {
+      float: left;
+      height: 25px;
+      width: 25px;
+      background: $black-color;
+      text-align: center;
+      margin-right: 10px;
+      border: 1px solid transparent;
+      &.active {
+        border: 1px solid $black-color;
+        background: $light-color;
+        a {
+          color: $black-color;
+        }
+      }
+      &:hover {
+        border: 1px solid $black-color;
+        background: $light-color;
+        &:hover a {
+          color: $black-color;
+        }
+      }
+      a {
+        color: $white-color;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+// footer
+
+.footer {
+  padding: 50px 0;
+  background: $black-color;
+}
+
+.footer-block {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  &:last-child {
+    margin-right: 0;
+  }
+  h3 {
+    border-top: 2px solid $light-color;
+    border-bottom: 2px solid $light-color;
+    color: $light-color;
+    padding: 8px 0;
+    text-align: center;
+  }
+  p {
+    color: $footer-text-color;
+    text-align: center;
+    a {
+      color: $footer-link-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+ }
 
 
